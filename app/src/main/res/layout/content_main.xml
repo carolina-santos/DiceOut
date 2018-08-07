@@ -4,50 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D2B48C"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-        <TextView
-            android:id="@+id/rollResult"
-            android:layout_width="wrap_content"
-            android:layout_height="17dp"
-            android:layout_marginTop="5dp"
-            android:text="Let's play!"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="Let's play!"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
             android:id="@+id/die1image"
-            android:layout_marginTop="35dp"
-            android:src="@drawable/d1"
-            android:layout_marginLeft= "15dp"
-            />
-
-        <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/die2image"
-            android:layout_marginTop="35dp"
-            android:src="@drawable/d1"
             android:layout_marginLeft="15dp"
-             />
+            android:layout_marginTop="35dp"
+            android:src="@drawable/d1" />
 
         <ImageView
+            android:id="@+id/die2image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/die3image"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="35dp"
-            android:src="@drawable/d1"
+            android:src="@drawable/d1" />
+
+        <ImageView
+            android:id="@+id/die3image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            />
+            android:layout_marginTop="35dp"
+            android:src="@drawable/d1" />
     </LinearLayout>
 
     <TextView
@@ -56,6 +55,7 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:text="Score: 0"
+        android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
