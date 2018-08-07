@@ -25,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
     //field to hold the roll result text
     TextView  rollResult, messageResult;
 
-    //field to hold the roll button
-    Button rollButton;
-
     //field to hold the score and dice results
     int score;
     int [] die;
@@ -54,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                rollDice(view);
             }
         });
 
@@ -69,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         //link instances to widgets in the activity view
         rollResult = (TextView) findViewById(R.id.rollResult);
         messageResult = (TextView) findViewById(R.id.messageResult);
-        rollButton = (Button) findViewById(R.id.rollButton);
         scoreText = (TextView) findViewById(R.id.scoreText);
 
         //randow number generator
